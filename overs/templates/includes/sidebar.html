@@ -1,0 +1,105 @@
+{% load static %}
+{% with request.resolver_match.view_name as view_name %}
+  <div>
+    <div class="interface_background d-flex flex-column flex-shrink-0 p-3 rounded text-white mb-1" style="width: 280px;">
+      <div class="d-flex align-items-start">
+        <div class="bg-light-subtle rounded-circle mt-1">
+          <img src="{% static 'img/overs_icon.png' %}" class="overs_icon mr-3">
+        </div>
+        <div class="ms-1">
+          <span class="fs-5">Overs</span><br>
+          <span style="font-size: 12px;">Don't overthink. Choose Overs Ink.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="interface_background d-flex flex-column flex-shrink-0 p-2 rounded text-white" style="width: 280px;">
+      <div class="text-center">
+        <span class="fs-4">Задачи   16</span>
+      </div>
+      <hr class="border border-white border-1 opacity-25 m-1">
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="{% url 'index' %}" class="nav-link text-white {% if view_name  == 'index' %}active{% endif %}">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+            Главная
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'tasks' %}" class="nav-link text-white {% if view_name  == 'tasks' %}active{% endif %}">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+            Задачи
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'plan' %}" class="nav-link text-white {% if view_name  == 'plan' %}active{% endif %}">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+            План
+          </a>
+        </li>
+        <li>
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-white" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+            - Проекты
+          </button>
+          <div class="collapse {% if view_name  == 'orders' %}show{% endif %}" id="home-collapse" style="">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small px-5">
+              <li><a href="#" class="nav-link text-decoration-none text-white">Товары</a></li>
+              <li><a href="{% url 'orders' %}" class="nav-link text-decoration-none text-white {% if view_name  == 'orders' %}active{% endif %}">Заказы</a></li>
+              <li><a href="#" class="nav-link text-decoration-none text-white">На склад</a></li>
+              <li><a href="#" class="nav-link text-decoration-none text-white">Опытные образцы</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+            Исполнители
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+            Департаменты
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+            Ресурсы и склад
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+            Пользователи
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+            Отчеты
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+            Исполнители
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+            Сервисы
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+            Настройки
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+{% endwith %}

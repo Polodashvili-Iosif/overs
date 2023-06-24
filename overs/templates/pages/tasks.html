@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Задачи
+{% endblock %}
+
+{% block content_center %}
+  <div class="orders_filters rounded interface_background m-1 p-3">
+    <div class="d-flex align-items-start">
+      <div class="bg-light-subtle rounded-circle">
+        <img src="{% static 'img/profile_photo.jpg' %}" class="tasks_profile_icon mr-3 rounded-circle">
+      </div>
+      <div class="text-white text-center fs-3 m-3">
+        Александр Дегтярёв
+      </div>
+    </div>
+  </div>
+  <div class="orders_table rounded interface_background m-1 p-2">
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Список задач</th>
+          <th scope="col">Статус</th>
+          <th scope="col">Комментарий</th>
+          <th scope="col">Код</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Монтаж перил</td>
+          <td>Просрочено</td>
+          <td>Проверить входящие</td>
+          <td>3064</td>
+        </tr>
+        <tr>
+          <td>Обрезка сектора</td>
+          <td>Осталось 3ч</td>
+          <td>Проверить входящие</td>
+          <td>9195</td>
+        </tr>
+        <tr>
+          <td>Распечатать чертёж</td>
+          <td>Осталось 5ч</td>
+          <td>Проверить входящие</td>
+          <td>3128</td>
+        </tr>
+        <tr>
+          <td>Подписать накладную</td>
+          <td>Не срочно</td>
+          <td>Проверить входящие</td>
+          <td>9177</td>
+        </tr>
+        <tr>
+          <td>Монтаж знака Пешеход</td>
+          <td>не срочно</td>
+          <td>Проверить входящие</td>
+          <td>1234</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+{% endblock %}
+
+{% block content_right %}
+  <div class="text-white tasks_map_block rounded interface_background m-1 p-3">
+    <div class="text-center">
+      <h3>
+        Задача: Полив сектора
+        <br>
+        Срок: Сегодня 16:00
+      </h3>
+    </div>
+    <img src="{% static 'img/tasks_map.jpg' %}" class="rounded mx-auto d-block">
+    <div class="container text-center">
+      <div class="row m-1">
+        <div class="col">
+          <button type="button" class="btn btn-primary btn-block">Проложить маршрут</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-primary">Доп. условия к задаче</button>
+        </div>
+      </div>
+      <div class="row m-1">
+        <div class="col">
+          <button type="button" class="btn btn-primary">Чат с подрядчиком</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-danger">Сообщить об ошибке</button>
+        </div>
+      </div>
+      <div class="row m-1">
+        <div class="col">
+          <button type="button" class="btn btn-success">Подтвердить выполнение задачи</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

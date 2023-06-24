@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Главная страница
+{% endblock %}
+
+{% block content_center %}
+  <div class="d-flex flex-row">
+    <div class="card_top card_reports ms-1 text-white p-2 rounded">
+      Отчёты
+      <br>
+      12
+      <br>
+      Просмотрено 80%
+    </div>
+    <div class="card_top card_transports ms-1 text-white p-2 rounded">
+      Транспорт
+      <br>
+      24
+      <br>
+      Посмотреть все
+    </div>
+    <div class="card_top card_equipment ms-1 text-white p-2 rounded">
+      Оборудование
+      <br>
+      56
+      <br>
+      Посмотреть все
+    </div>
+    <div class="card_top card_staff ms-1 text-white p-2 rounded">
+      Персонал
+      <br>
+      23
+      <br>
+      Посмотреть все
+    </div>
+  </div>
+  <div class="d-flex flex-row">
+    <div class="diagram rounded interface_background m-1">
+    </div>
+    <div class="chart rounded interface_background m-1">
+    </div>
+  </div>
+  <div class="projects rounded interface_background m-1">
+  </div>
+{% endblock %}
+
+{% block content_right %}
+  <div class="card_profile rounded interface_background m-1 mt-0">
+  </div>
+  <div class="card_chats rounded interface_background m-1 mt-0">
+  </div>
+{% endblock %}

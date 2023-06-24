@@ -1,0 +1,21 @@
+{% load static %}
+<header class="header">
+  <nav class="interface_background navbar">
+    <form class="container-fluid d-flex align-items-center">
+      <div class="flex-grow-1">
+        <input type="text" class="form-control rounded-pill site_background">
+      </div>
+      <div class="ml-auto">
+        <a href="tel:+79998887766" class="m-1 text-decoration-none">
+          <img src="{% static 'img/call_icon.png' %}" class="call_icon">
+        </a>
+        <a href="#" class="m-1 text-decoration-none">
+          <img src="{% static 'img/chat_icon.png' %}" class="chat_icon">
+        </a>
+        <a href="#" class="m-1 text-decoration-none">
+          <img src="{% static 'img/notifications_icon.png' %}" class="notifications_icon">
+        </a>
+      </div>
+    </form>
+  </nav>
+</header>

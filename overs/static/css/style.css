@@ -1,0 +1,128 @@
+.site_background {
+    background-color: #000033;
+}
+
+.interface_background {
+    background-color: #2B2B4B;
+}
+
+.header_nav_input {
+    background-color: #2B2B4B;
+}
+
+.call_icon {
+    height: 35px;
+}
+
+.chat_icon {
+    height: 35px;
+}
+
+.overs_icon {
+    height: 45px;
+    width: 45px;
+    display: inline;
+}
+
+.tasks_profile_icon {
+    height: 90px;
+    width: 90px;
+}
+
+.notifications_icon {
+    height: 35px;
+}
+
+.header {
+    box-shadow: 0px 7px 8px 3px rgba(0, 0, 0, 0.61);
+}
+
+.card_top {
+    width: 220px;
+    height: 86px;
+}
+
+.card_reports {
+    background: linear-gradient(89.69deg, #F39034 2.03%, #FF2727 99.73%);
+    box-shadow: 4px 4px 10px rgba(244, 144, 53, 0.3);
+}
+
+.card_transports {
+    background: linear-gradient(270deg, #003AD2 0%, #0097EC 100%);
+    box-shadow: 4px 4px 10px rgba(1, 149, 236, 0.3);
+}
+
+.card_equipment {
+    background: linear-gradient(90deg, rgba(52,255,62,1) 0%, rgba(0,255,93,1) 100%);
+    box-shadow: 4px 4px 10px rgba(1, 149, 236, 0.3);
+}
+
+.card_staff {
+    background: linear-gradient(90deg, rgba(214,99,255,1) 0%, rgba(188,0,255,1) 100%);
+    box-shadow: 4px 4px 10px rgba(1, 149, 236, 0.3);
+}
+
+.diagram {
+    width: 220px;
+    height: 250px;
+}
+
+.chart {
+    width: 660px;
+    height: 250px;
+}
+
+.projects {
+    width: 888px;
+    height: 280px;
+}
+
+.card_profile {
+    width: 300px;
+    height: 86px;
+}
+
+.card_chats {
+    width: 300px;
+    height: 538px;
+}
+
+.orders_filters {
+    width: 500px;
+    height: 120px;
+}
+
+.orders_table {
+    width: 500px;
+    height: 500px;
+}
+
+.orders_info {
+    width: 700px;
+    height: 120px;
+}
+
+.orders_info_2 {
+    width: 700px;
+    height: 500px;
+}
+
+.tasks_map_block {
+    width: 700px;
+    height: 625px;
+}
+
+.plan_target {
+    width: 600px;
+    height: 330px;
+}
+
+.plan_info {
+    width: 600px;
+    height: 330px;
+}
+
+.plan_stages {
+    width: 1207px;
+    height: 290px;
+}
