@@ -152,3 +152,19 @@
     background: linear-gradient(220.74deg, #9380D5 -9.53%, #260033 119.88%);
     box-shadow: 4px 4px 10px rgba(151, 80, 239, 0.3);
 }
+
+.plan_stage_3 {
+    width: 280px;
+    height: 200px;
+
+    background: linear-gradient(89.69deg, #F39034 2.03%, #FF2727 99.73%);
+    box-shadow: 4px 4px 10px rgba(151, 80, 239, 0.3);
+}
+
+.plan_stage_4 {
+    width: 280px;
+    height: 200px;
+
+    background: linear-gradient(270deg, #003AD2 0%, #0097EC 100%);
+    box-shadow: 4px 4px 10px rgba(151, 80, 239, 0.3);
+}

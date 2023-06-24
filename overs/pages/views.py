@@ -15,3 +15,6 @@ def tasks(request):
 
 def plan(request):
     return render(request, 'pages/plan.html')
+
+def my_plan(request):
+    return render(request, 'pages/my_plan.html')
