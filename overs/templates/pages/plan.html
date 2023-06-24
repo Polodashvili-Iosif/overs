@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content_center %}
-  <div class="d-flex flex-row">
+  <div class="text-white d-flex flex-row">
     <div class="text-white text-center plan_target rounded interface_background m-1 mt-0 p-3">
       <h5>
         Создайте цель
@@ -47,15 +47,15 @@
           <div class="col">
             <div class="container">
               <div class="form-group">
-                <label for="dateInput">Дата начала:</label>
-                <input type="date" class="form-control" id="dateInput">
+                <label for="dateInput">Доп. условия:</label>
+                <input type="text" class="form-control" placeholder="Введите">
               </div>
             </div>
           </div>
           <div class="col">
             <div class="container">
               <div class="form-group">
-                <label for="dateInput">Дата окончания:</label>
+                <label for="dateInput">Сроки:</label>
                 <input type="date" class="form-control" id="dateInput">
               </div>
             </div>
@@ -63,7 +63,56 @@
         </div>
       </div>
     </div>
-    <div class="plan_info rounded interface_background m-1 mt-0">
+    <div class="text-center plan_info rounded interface_background m-1 p-2 mt-0">
+      <div class="container">
+        <h5>
+          Для вас создан план
+        </h5>
+        <div class="row m-1">
+          <div class="col border border-dark-subtle rounded m-1">
+            <div class="container">
+              <div class="form-group">
+                <label for="dateInput" class="m-1">Сроки до:</label>
+                <input type="date" class="form-control" id="dateInput">
+              </div>
+            </div>
+          </div>
+          <div class="col border border-dark-subtle rounded m-1">
+            <span class="fs-5">Риски:</span>
+            <div class="d-flex flex-row">
+              <div class="text-center p-3 m-2 rounded-circle border border-4 border-success plan_risks_circle site_background">
+                5
+              </div>
+              <div class="text-center p-3 m-2 rounded-circle border border-4 border-warning plan_risks_circle site_background">
+                1
+              </div>
+              <div class="text-center p-3 m-2 rounded-circle border border-4 border-danger plan_risks_circle site_background">
+                0
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col border border-dark-subtle rounded m-1">
+          <div class="container">
+            <div class="form-group">
+              <label for="dateInput" class="m-1">Советы:</label>
+                <table class="table table-dark table-hover">
+                  <tbody>
+                    <tr>
+                      <td class="m-1">Сменить удобрение 5-ого ряда</td>
+                      <td>
+                        <button type="button" class="btn btn-success">Принять</button>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-danger">Отклонить</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="plan_stages rounded interface_background m-1">
