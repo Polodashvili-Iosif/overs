@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Ваш план
+{% endblock %}
+
+{% block content_center %}
+  <div class="text-white plan_stages rounded m-1 p-1 mt-0">
+    <div>
+      <div class="fs-5 d-flex flex-row text-center">
+        {% for plan in plans %}
+          <div class="plan_stage_{{ forloop.counter }} m-3 mt-0 text-white p-4 rounded">
+            {{ plan.name }}
+            <br>
+            До {{ plan.deadline }}
+            <br>
+            Шагов: 2{{ plan.tasks.count }}
+            <br>
+            Советов: {{ plan.advices.count }}
+          </div>
+        {% endfor %}
+      </div>
+      <div class="container text-black">
+        <div class="row">
+          {% for plan in plans %}
+            <div class="col">
+              {% for task in plan.tasks.all %}
+                <a href="{% url 'index' task.id %}" class="text-decoration-none text-black">
+                  <div class="plan_task_{{ forloop.parentloop.counter }} m-1 p-3 rounded">
+                    <span class="text-center fs-5">
+                      <b>Шаг {{ task.number }}. {{ task.name }}</b>
+                    </span>
+                    <br>
+                    <span class="text-start">
+                      Исполнитель: {{ task.performer }}
+                      <br>
+                      Расположение: {{ task.location }}
+                      <br>
+                      Ответственный: {{ task.responsible }}
+                      <br>
+                      Статус: {{ task.status }}
+                    </span>
+                  </div>
+                </a>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

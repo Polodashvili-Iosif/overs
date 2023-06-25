@@ -20,36 +20,14 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>0</td>
-            <td>N</td>
-            <td>Азот</td>
-            <td>True</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>P</td>
-            <td>Фосфор</td>
-            <td>True</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>K</td>
-            <td>Калий</td>
-            <td>True</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Mn</td>
-            <td>Марганец</td>
-            <td>True</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Ca</td>
-            <td>Кальций</td>
-            <td>True</td>
-          </tr>
+          {% for element in elements %}
+            <tr>
+              <td>{{ element.pk }}</td>
+              <td>{{ element.element }}</td>
+              <td>{{ element.name }}</td>
+              <td>{{ element.water_soluble }}</td>
+            </tr>
+          {% endfor %}
         </tbody>
       </table>
     </div>

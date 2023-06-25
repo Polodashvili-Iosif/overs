@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
+from . import models
 
 # def index(request):
 #     return render(request, 'pages/index.html')
@@ -9,8 +10,9 @@ def orders(request):
     return render(request, 'pages/orders.html')
 
 
-def index(request):
-    return render(request, 'pages/tasks.html')
+def index(request, id, optional_arg=None):
+    task = get_object_or_404(models.Task, id=id)
+    return render(request, 'pages/tasks.html', {'task': task})
 
 
 def plan(request):
@@ -18,7 +20,11 @@ def plan(request):
 
 
 def my_plan(request):
-    return render(request, 'pages/my_plan.html')
+    plans = models.Plan.objects.all()
+    context = {
+        'plans': plans,
+    }
+    return render(request, 'pages/my_plan_2.html', context)
 
 
 def map(request):
@@ -30,7 +36,11 @@ def sector_map(request):
 
 
 def fertilizers(request):
-    return render(request, 'pages/fertilizers.html')
+    elements = models.Element.objects.all()
+    context = {
+        'elements': elements
+    }
+    return render(request, 'pages/fertilizers.html', context)
 
 
 def route(request, name):
