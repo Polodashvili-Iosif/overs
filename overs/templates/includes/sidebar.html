@@ -58,9 +58,9 @@
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link text-white">
+          <a href="{% url 'map' %}" class="nav-link text-white {% if view_name  == 'map' %}active{% endif %}">
             <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-            Департаменты
+            Карта
           </a>
         </li>
         <li>

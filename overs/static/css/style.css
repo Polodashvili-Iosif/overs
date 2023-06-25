@@ -188,3 +188,29 @@
     font-size: 14px;
     background: #0097EC;
 }
+
+.map_block {
+    width: 1220px;
+    height: 625px;
+}
+
+.map_image {
+    height: 573px;
+    width: 1100px;
+}
+
+.map_info {
+    top: 20%;
+    left: 6%;
+}
+
+.map_info_small {
+    font-size: 12px;
+}
+
+.map_a {
+    width: 43%;
+    height: 60%;
+    left: 31%;
+    top: 30%;
+}
