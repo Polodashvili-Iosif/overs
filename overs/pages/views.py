@@ -23,3 +23,11 @@ def my_plan(request):
 
 def map(request):
     return render(request, 'pages/map.html')
+
+
+def sector_map(request):
+    return render(request, 'pages/sector_map.html')
+
+
+def fertilizers(request):
+    return render(request, 'pages/fertilizers.html')

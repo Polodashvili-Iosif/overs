@@ -52,9 +52,9 @@
           </div>
         </li>
         <li>
-          <a href="#" class="nav-link text-white">
+          <a href="{% url 'fertilizers' %}" class="nav-link text-white {% if view_name  == 'fertilizers' %}active{% endif %}">
             <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-            Исполнители
+            Удобрения
           </a>
         </li>
         <li>
@@ -64,9 +64,9 @@
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link text-white">
+          <a href="{% url 'sector_map' %}" class="nav-link text-white {% if view_name  == 'sector_map' %}active{% endif %}">
             <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-            Ресурсы и склад
+            Карта сектора
           </a>
         </li>
         <li>

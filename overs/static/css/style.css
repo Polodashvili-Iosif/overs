@@ -214,3 +214,15 @@
     left: 31%;
     top: 30%;
 }
+
+.sector_map_image {
+    height: 90%;
+}
+
+.sector_map_top {
+    height: 39%;
+}
+
+.sector_map_bottom {
+    height: 38%;
+}

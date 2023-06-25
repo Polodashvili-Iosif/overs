@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Карта сектора
+{% endblock %}
+
+{% block content_center %}
+  <div class="d-flex flex-row sector_map_top">
+    <div class="m-1 mt-0 text-white text-center p-2 rounded interface_background">
+      <span class="fs-4">
+        Карта Участка
+      </span>
+      <img src="{% static 'img/sector_map.jpg' %}" class="rounded mx-auto d-block sector_map_image">
+    </div>
+    <div class="m-1 mt-0 text-center interface_background text-white p-2 rounded">
+      <span class="fs-4">
+        Прогноз погоды для участка
+      </span>
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Время</th>
+              <th scope="col">Вероятность осадков</th>
+              <th scope="col">Температура</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12:00</td>
+              <td>70%</td>
+              <td>27°</td>
+            </tr>
+            <tr>
+              <td>13:00</td>
+              <td>50%</td>
+              <td>28°</td>
+            </tr>
+            <tr>
+              <td>14:00</td>
+              <td>20%</td>
+              <td>33°</td>
+            </tr>
+            <tr>
+              <td>15:00</td>
+              <td>5%</td>
+              <td>35°</td>
+            </tr>
+            <tr>
+              <td>16:00</td>
+              <td>50%</td>
+              <td>28°</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+  <div class="d-flex flex-row sector_map_bottom">
+    <div class="m-1 interface_background text-white p-2 rounded">
+      <img src="{% static 'img/graph_of_harvested_grapes.jpg' %}" class="rounded mx-auto d-block h-100">
+    </div>
+    <div class="m-1 interface_background text-white p-2 rounded">
+    <div class="m-1 mt-0 text-center interface_background text-white p-2 rounded">
+      <span class="fs-4">
+        Концентрация веществ в почве
+      </span>
+      <table class="table table-dark table-hover m-1">
+        <thead>
+          <tr>
+            <th scope="col">Название</th>
+            <th scope="col">Концентрация</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Азот</td>
+            <td>70%</td>
+          </tr>
+          <tr>
+            <td>Калий</td>
+            <td>50%</td>
+          </tr>
+          <tr>
+            <td>Сера</td>
+            <td>20%</td>
+          </tr>
+          <tr>
+            <td>Магний</td>
+            <td>5%</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -10,4 +10,6 @@ urlpatterns = [
     path('plan/', views.plan, name='plan'),
     path('my_plan/', views.my_plan, name='my_plan'),
     path('map/', views.map, name='map'),
+    path('sector_map/', views.sector_map, name='sector_map'),
+    path('fertilizers/', views.fertilizers, name='fertilizers'),
 ]
