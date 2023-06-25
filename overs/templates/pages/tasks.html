@@ -75,23 +75,33 @@
     <div class="container text-center">
       <div class="row m-1">
         <div class="col">
-          <button type="button" class="btn btn-primary btn-block">Проложить маршрут</button>
+          <a href="{% url 'route' 'Маршрут' %}">
+            <button type="button" class="btn btn-primary btn-block">Проложить маршрут</button>
+          </a>
         </div>
         <div class="col">
-          <button type="button" class="btn btn-primary">Доп. условия к задаче</button>
-        </div>
-      </div>
-      <div class="row m-1">
-        <div class="col">
-          <button type="button" class="btn btn-primary">Чат с подрядчиком</button>
-        </div>
-        <div class="col">
-          <button type="button" class="btn btn-danger">Сообщить об ошибке</button>
+          <a href="{% url 'route' 'Доп. условия к задаче' %}">
+            <button type="button" class="btn btn-primary">Доп. условия к задаче</button>
+          </a>
         </div>
       </div>
       <div class="row m-1">
         <div class="col">
-          <button type="button" class="btn btn-success">Подтвердить выполнение задачи</button>
+          <a href="{% url 'route' 'Чат с подрядчиком' %}">
+            <button type="button" class="btn btn-primary">Чат с подрядчиком</button>
+          </a>
+        </div>
+        <div class="col">
+          <a href="{% url 'route' 'Отчёт о ошибке' %}">
+            <button type="button" class="btn btn-danger">Сообщить об ошибке</button>
+          </a>
+        </div>
+      </div>
+      <div class="row m-1">
+        <div class="col">
+          <a href="{% url 'route' 'Выполнение задачи подтверждено (+5 очков рейтинга)' %}">
+            <button type="button" class="btn btn-success">Подтвердить выполнение задачи</button>
+          </a>
         </div>
       </div>
     </div>

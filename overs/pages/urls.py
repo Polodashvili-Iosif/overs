@@ -12,4 +12,5 @@ urlpatterns = [
     path('map/', views.map, name='map'),
     path('sector_map/', views.sector_map, name='sector_map'),
     path('fertilizers/', views.fertilizers, name='fertilizers'),
+    path('route/<name>', views.route, name='route'),
 ]

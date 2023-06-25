@@ -31,3 +31,7 @@ def sector_map(request):
 
 def fertilizers(request):
     return render(request, 'pages/fertilizers.html')
+
+
+def route(request, name):
+    return render(request, 'pages/route.html', {'name': name})
